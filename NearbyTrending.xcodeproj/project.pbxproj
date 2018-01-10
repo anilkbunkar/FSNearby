@@ -8,13 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		04919BF5200525A600414879 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04919BF4200525A600414879 /* AppDelegate.m */; };
-		04919BF8200525A600414879 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04919BF7200525A600414879 /* ViewController.m */; };
 		04919BFB200525A600414879 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04919BF9200525A600414879 /* Main.storyboard */; };
 		04919BFD200525A600414879 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04919BFC200525A600414879 /* Assets.xcassets */; };
 		04919C00200525A600414879 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04919BFE200525A600414879 /* LaunchScreen.storyboard */; };
 		04919C03200525A600414879 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04919C02200525A600414879 /* main.m */; };
 		04919C0D200525A700414879 /* NearbyTrendingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04919C0C200525A700414879 /* NearbyTrendingTests.m */; };
 		04919C18200525A700414879 /* NearbyTrendingUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04919C17200525A700414879 /* NearbyTrendingUITests.m */; };
+		04919C282005263000414879 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04919C272005263000414879 /* HomeViewController.m */; };
+		04919C3120052DDB00414879 /* Venue.m in Sources */ = {isa = PBXBuildFile; fileRef = 04919C3020052DDB00414879 /* Venue.m */; };
+		04919C372005349600414879 /* SearchVenues.m in Sources */ = {isa = PBXBuildFile; fileRef = 04919C362005349600414879 /* SearchVenues.m */; };
+		04919C3A200534AA00414879 /* GetTrendingVenues.m in Sources */ = {isa = PBXBuildFile; fileRef = 04919C39200534AA00414879 /* GetTrendingVenues.m */; };
+		04919C422005479800414879 /* VenueTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04919C402005479700414879 /* VenueTableViewCell.m */; };
+		04919C432005479800414879 /* VenueTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04919C412005479700414879 /* VenueTableViewCell.xib */; };
+		04919C4620055D3400414879 /* UserLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04919C4520055D3400414879 /* UserLocationManager.m */; };
+		04919C4920055F9500414879 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04919C4820055F9500414879 /* CoreLocation.framework */; };
+		04919C4C2005ED6300414879 /* FSCachingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04919C4B2005ED6300414879 /* FSCachingManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +46,6 @@
 		04919BF0200525A600414879 /* NearbyTrending.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NearbyTrending.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04919BF3200525A600414879 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		04919BF4200525A600414879 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		04919BF6200525A600414879 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		04919BF7200525A600414879 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		04919BFA200525A600414879 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04919BFC200525A600414879 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04919BFF200525A600414879 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +57,23 @@
 		04919C13200525A700414879 /* NearbyTrendingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NearbyTrendingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04919C17200525A700414879 /* NearbyTrendingUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NearbyTrendingUITests.m; sourceTree = "<group>"; };
 		04919C19200525A700414879 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04919C262005263000414879 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		04919C272005263000414879 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		04919C2F20052DDB00414879 /* Venue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Venue.h; sourceTree = "<group>"; };
+		04919C3020052DDB00414879 /* Venue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Venue.m; sourceTree = "<group>"; };
+		04919C352005349600414879 /* SearchVenues.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchVenues.h; sourceTree = "<group>"; };
+		04919C362005349600414879 /* SearchVenues.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchVenues.m; sourceTree = "<group>"; };
+		04919C38200534AA00414879 /* GetTrendingVenues.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GetTrendingVenues.h; sourceTree = "<group>"; };
+		04919C39200534AA00414879 /* GetTrendingVenues.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetTrendingVenues.m; sourceTree = "<group>"; };
+		04919C3B200535BA00414879 /* APIObjectDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIObjectDelegate.h; sourceTree = "<group>"; };
+		04919C3F2005479700414879 /* VenueTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VenueTableViewCell.h; sourceTree = "<group>"; };
+		04919C402005479700414879 /* VenueTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VenueTableViewCell.m; sourceTree = "<group>"; };
+		04919C412005479700414879 /* VenueTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VenueTableViewCell.xib; sourceTree = "<group>"; };
+		04919C4420055D3400414879 /* UserLocationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserLocationManager.h; sourceTree = "<group>"; };
+		04919C4520055D3400414879 /* UserLocationManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserLocationManager.m; sourceTree = "<group>"; };
+		04919C4820055F9500414879 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		04919C4A2005ED6300414879 /* FSCachingManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSCachingManager.h; sourceTree = "<group>"; };
+		04919C4B2005ED6300414879 /* FSCachingManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSCachingManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04919C4920055F9500414879 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +109,7 @@
 				04919C0B200525A700414879 /* NearbyTrendingTests */,
 				04919C16200525A700414879 /* NearbyTrendingUITests */,
 				04919BF1200525A600414879 /* Products */,
+				04919C4720055F9400414879 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,10 +126,12 @@
 		04919BF2200525A600414879 /* NearbyTrending */ = {
 			isa = PBXGroup;
 			children = (
+				04919C2B20052BE800414879 /* HelperClasses */,
+				04919C2A2005266E00414879 /* Views */,
+				04919C292005265800414879 /* Models */,
+				04919C252005261100414879 /* ViewControllers */,
 				04919BF3200525A600414879 /* AppDelegate.h */,
 				04919BF4200525A600414879 /* AppDelegate.m */,
-				04919BF6200525A600414879 /* ViewController.h */,
-				04919BF7200525A600414879 /* ViewController.m */,
 				04919BF9200525A600414879 /* Main.storyboard */,
 				04919BFC200525A600414879 /* Assets.xcassets */,
 				04919BFE200525A600414879 /* LaunchScreen.storyboard */,
@@ -130,6 +157,58 @@
 				04919C19200525A700414879 /* Info.plist */,
 			);
 			path = NearbyTrendingUITests;
+			sourceTree = "<group>";
+		};
+		04919C252005261100414879 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				04919C262005263000414879 /* HomeViewController.h */,
+				04919C272005263000414879 /* HomeViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		04919C292005265800414879 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				04919C2F20052DDB00414879 /* Venue.h */,
+				04919C3020052DDB00414879 /* Venue.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		04919C2A2005266E00414879 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				04919C3F2005479700414879 /* VenueTableViewCell.h */,
+				04919C402005479700414879 /* VenueTableViewCell.m */,
+				04919C412005479700414879 /* VenueTableViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		04919C2B20052BE800414879 /* HelperClasses */ = {
+			isa = PBXGroup;
+			children = (
+				04919C352005349600414879 /* SearchVenues.h */,
+				04919C362005349600414879 /* SearchVenues.m */,
+				04919C38200534AA00414879 /* GetTrendingVenues.h */,
+				04919C39200534AA00414879 /* GetTrendingVenues.m */,
+				04919C3B200535BA00414879 /* APIObjectDelegate.h */,
+				04919C4420055D3400414879 /* UserLocationManager.h */,
+				04919C4520055D3400414879 /* UserLocationManager.m */,
+				04919C4A2005ED6300414879 /* FSCachingManager.h */,
+				04919C4B2005ED6300414879 /* FSCachingManager.m */,
+			);
+			path = HelperClasses;
+			sourceTree = "<group>";
+		};
+		04919C4720055F9400414879 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04919C4820055F9500414879 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +318,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04919C00200525A600414879 /* LaunchScreen.storyboard in Resources */,
+				04919C432005479800414879 /* VenueTableViewCell.xib in Resources */,
 				04919BFD200525A600414879 /* Assets.xcassets in Resources */,
 				04919BFB200525A600414879 /* Main.storyboard in Resources */,
 			);
@@ -265,9 +345,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04919BF8200525A600414879 /* ViewController.m in Sources */,
+				04919C372005349600414879 /* SearchVenues.m in Sources */,
 				04919C03200525A600414879 /* main.m in Sources */,
 				04919BF5200525A600414879 /* AppDelegate.m in Sources */,
+				04919C4620055D3400414879 /* UserLocationManager.m in Sources */,
+				04919C282005263000414879 /* HomeViewController.m in Sources */,
+				04919C3120052DDB00414879 /* Venue.m in Sources */,
+				04919C422005479800414879 /* VenueTableViewCell.m in Sources */,
+				04919C3A200534AA00414879 /* GetTrendingVenues.m in Sources */,
+				04919C4C2005ED6300414879 /* FSCachingManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,7 +516,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q325QSQ8ZB;
 				INFOPLIST_FILE = NearbyTrending/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bunkar.NearbyTrending;
@@ -443,7 +531,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q325QSQ8ZB;
 				INFOPLIST_FILE = NearbyTrending/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bunkar.NearbyTrending;
