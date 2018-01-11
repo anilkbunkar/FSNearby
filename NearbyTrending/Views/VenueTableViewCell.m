@@ -16,7 +16,7 @@
 }
 
 - (void) setVenue:(Venue *)venueObj {
-    [self.nameLabel setText:venueObj.name];    
+    [self.nameLabel setText:venueObj.name];
     if (venueObj.distanceInMeters.floatValue > 1000) {
         [self.distanceLabel setText:[NSString stringWithFormat:@"%.1f kms",venueObj.distanceInMeters.floatValue/1000]];
 

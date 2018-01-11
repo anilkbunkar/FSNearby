@@ -12,6 +12,7 @@
 #import "GetTrendingVenues.h"
 #import "VenueTableViewCell.h"
 #import "UserLocationManager.h"
+#import "MapViewController.h"
 
 #define TRENDING_TABLE_TAG 101
 #define SEARCH_TABLE_TAG 102
@@ -151,7 +152,17 @@
 }
 
 - (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    [tableView deselectRowAtIndexPath:indexPath animated:YES]; 
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    if (tableView.tag == TRENDING_TABLE_TAG) {
+        MapViewController *mapVC = [[MapViewController alloc] initWithVenue:[self.trendingVenuesObj.trendingVenues objectAtIndex:indexPath.row]];
+        [self.navigationController pushViewController:mapVC animated:YES];
+        
+    } else {
+        MapViewController *mapVC = [[MapViewController alloc] initWithVenue:[self.searchVenuesObj.searchResults objectAtIndex:indexPath.row]];
+        [self.navigationController pushViewController:mapVC animated:YES];
+        
+    }
+
 }
 
 - (NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -171,16 +182,21 @@
     } else if (Klass == [GetTrendingVenues class]) {
         [self.activityIndicatorView stopAnimating];
         [self.trendingTableView reloadData];
+        if (self.trendingVenuesObj.trendingVenues.count == 0) {
+            [self showAlertWithMessage:@"No results! please try switching the location"];
+        }
+
     }
 }
 
 - (void) apiCallFailedForForKlass:(Class)Klass withError:(NSError *)error {
     if (Klass == [SearchVenues class]) {
-        
+
     } else if (Klass == [GetTrendingVenues class]) {
         [self.activityIndicatorView stopAnimating];
-        [self showAlertWithMessage:@"Oops! something went wrong"];
+        [self showAlertWithMessage:@"Oops! something went wrong, please try again later"];
     }
+
 }
 
 - (void) showAlertWithMessage: (NSString *)message {
@@ -285,12 +301,12 @@
 
 - (void) locationServiceNotEnabledForTheApp {
     //Show popup to go to settings and change location permission or continue browsing in default location
-    [self showAlertWithMessage:@"Please enable location services to browse nearby places"];
+    [self showLocationAlertPopupWithMessage:@"Please enable location services to browse nearby places"];
 }
 
 - (void) locationServicesNotEnabledOnDevice {
     //Show popup to go to settings and change location permission or continue browsing in default location
-    [self showAlertWithMessage:@"Looks like location services have been disabled for the device"];
+    [self showLocationAlertPopupWithMessage:@"Looks like location services have been disabled for the device"];
 
 }
 
@@ -306,7 +322,7 @@
                                                                  
                                                              }];
                                                          }];
-    UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"Continue browsing (Default Cupertino)"
+    UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"Continue browsing (Default NewYork)"
                                                      style:UIAlertActionStyleCancel
                                                    handler:^(UIAlertAction * _Nonnull action) {
                                                        //continue browsing in default locations

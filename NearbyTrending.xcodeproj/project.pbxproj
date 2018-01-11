@@ -23,6 +23,8 @@
 		04919C4620055D3400414879 /* UserLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04919C4520055D3400414879 /* UserLocationManager.m */; };
 		04919C4920055F9500414879 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04919C4820055F9500414879 /* CoreLocation.framework */; };
 		04919C4C2005ED6300414879 /* FSCachingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04919C4B2005ED6300414879 /* FSCachingManager.m */; };
+		04919C502006A4DF00414879 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04919C4E2006A4DF00414879 /* MapViewController.m */; };
+		04919C512006A4DF00414879 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04919C4F2006A4DF00414879 /* MapViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +76,9 @@
 		04919C4820055F9500414879 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		04919C4A2005ED6300414879 /* FSCachingManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSCachingManager.h; sourceTree = "<group>"; };
 		04919C4B2005ED6300414879 /* FSCachingManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSCachingManager.m; sourceTree = "<group>"; };
+		04919C4D2006A4DF00414879 /* MapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		04919C4E2006A4DF00414879 /* MapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		04919C4F2006A4DF00414879 /* MapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +169,9 @@
 			children = (
 				04919C262005263000414879 /* HomeViewController.h */,
 				04919C272005263000414879 /* HomeViewController.m */,
+				04919C4D2006A4DF00414879 /* MapViewController.h */,
+				04919C4E2006A4DF00414879 /* MapViewController.m */,
+				04919C4F2006A4DF00414879 /* MapViewController.xib */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -320,6 +328,7 @@
 				04919C00200525A600414879 /* LaunchScreen.storyboard in Resources */,
 				04919C432005479800414879 /* VenueTableViewCell.xib in Resources */,
 				04919BFD200525A600414879 /* Assets.xcassets in Resources */,
+				04919C512006A4DF00414879 /* MapViewController.xib in Resources */,
 				04919BFB200525A600414879 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -352,6 +361,7 @@
 				04919C282005263000414879 /* HomeViewController.m in Sources */,
 				04919C3120052DDB00414879 /* Venue.m in Sources */,
 				04919C422005479800414879 /* VenueTableViewCell.m in Sources */,
+				04919C502006A4DF00414879 /* MapViewController.m in Sources */,
 				04919C3A200534AA00414879 /* GetTrendingVenues.m in Sources */,
 				04919C4C2005ED6300414879 /* FSCachingManager.m in Sources */,
 			);
